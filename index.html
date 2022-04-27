@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        img {
+  float: left;
+}
+table {
+    float:right
+}
+        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="Sytles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="script.js"></script> 
+</head>
+<div class="container">
+
+<body>	
+    <div class="st-container">
+    
+        <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+        <a href="#st-panel-1">Home</a>
+        <input type="radio" name="radio-set" id="st-control-2"/>
+        <a href="#st-panel-2">About us</a>
+        <input type="radio" name="radio-set" id="st-control-3"/>
+        <a href="#st-panel-3">Course details</a>
+        <input type="radio" name="radio-set" id="st-control-4"/>
+        <a href="#st-panel-4">Contact</a>
+        <input type="radio" name="radio-set" id="st-control-5"/>
+        <a href="#st-panel-5">Structure</a>
+        
+        <div class="st-scroll">
+        
+            <!-- Placeholder text from http://hipsteripsum.me/ -->
+            
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="image/8.png" style="width:100%">
+                <img class="mySlides" src="image/7.png" style="width:100%">
+                <img class="mySlides" src="image/6.png" style="width:100%">
+                <img class="mySlides" src="image/9.png" style="width:100%">
+              
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+            <section class="st-panel" id="st-panel-1">
+    <div class="st-deco" data-icon="&#xf069;"></div>
+                <h2>Home</h2>
+                <img src="image/2.png" width="120" height="120"alt=""/>
+                <h1>Super Training</h1>
+            
+                <h3>Gethin(Wu Guoxiang)</h3>
+                <p><img src="image/10.png" alt="10" style="width:170px;height:170px;margin-left:600px;">This is an excellent school where you can learn many skills.The purpose of our website is to attract more people to come to our training school to enjoy the quality of education, so that people can feel happy in learning.</p>
+                
+                <img src="image/1.png"width="600px">
+            
+                
+            </section>
+            
+            <section class="st-panel st-color" id="st-panel-2">
+                <div class="st-deco" data-icon="&#xf118;"></div>
+                <h2>About us</h2>
+                <img src="image/2.png" width="120" height="120"alt=""/>
+                <h1>Super Trainning</h1>
+            <h3>Gethin(Wu Guoxiang)</h3>
+                
+                <p>Introduction: We are a training school in YinZhou district, Ningbo city, focusing on student learning and skills development. Our teachers have rich teaching experience, and our courses are also very rich......</p>
+                <img src="image/4.png"width="600px">
+            </section>
+            
+            
+            <section class="st-panel" id="st-panel-3">
+                <div class="st-deco" data-icon="&#xf0f4;"></div>
+                <h2>Course details</h2>
+                <img src="image/2.png" width="120" height="120"alt=""/>
+                <h1>Super Trainning</h1>
+            <h3>Gethin(Wu Guoxiang)</h3>
+                <p>1.Build a website:We will teach you how to make a website, including skillfully using the language of building the website:HTML,CSS,JavaScript,etc,and how to use the software of building the website,such as Dreamweaver,Notepad++ and visual studio code, so that you can skillfully build the website...</p>
+                <table width="1000" border="1">
+                    <tr>
+                        <td>course</td>
+                        <td>requirements</td>
+                        <td>time</td>
+                
+                    </tr>
+                    <tr>
+                        <td>create website</td>
+                        <td>Learn to make website skillfully</td>
+                        <td>52hours</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Making a database</td>
+                        <td>Learn and master the database production and application</td>
+                        <td>60hours</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Cyber security</td>
+                        <td>Learn how to manage Cyber to make them secure</td>
+                        <td>45hours</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Change and improvement of knowledge management system</td>
+                        <td>Learn how to apply changes and improvements to knowledge management systems</td>
+                        <td>35hours</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Project change process management</td>
+                        <td>Learn how to apply Project change process management</td>
+                        <td>55hours</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Enterprise knowledge management development strategy</td>
+                        <td>Learn how to apply Enterprise knowledge management development strategy</td>
+                        <td>55hours</td>
+                
+                    </tr>
+                </table>
+                <img src="image/5.png"width="600px">
+            </section>
+            
+            <section class="st-panel st-color" id="st-panel-4">
+                <div class="st-deco" data-icon="&#xf06c;"></div>
+                <h2>Contact</h2>
+                <img src="image/2.png" width="120" height="120"alt=""/>
+                <h1>Super Trainning</h1>
+            <h3>Gethin(Wu Guoxiang)</h3>
+                <p>Address:9 xuefu road Ningbo city zhejiang province.phone number:+86xxxxxxx.Fax number:1-23-4-xxx.E-mail:123xx@qq.com</p>
+
+                <form name="myform" method="post" action="mailto:username@hotmail.com" onsubmit="return validateform()">
+                    Name:
+                    <input type="text" name="aname"><br>  
+                    Email:
+                    <input type="text" name="Email"><br>  
+                    message:
+                    <input type="text" name="message"><br>
+                    phone: 
+                    <input type="text" name="phone"><br> 
+                    <input type="submit" value="submit">  
+                    </form>    
+
+                      <img src="image/3.png"width="600px">
+                        </section>
+            
+            <section class="st-panel" id="st-panel-5">
+                <div class="st-deco" data-icon="&#xf004;"></div>
+                <h2>Structure</h2>
+                <img src="image/2.png" width="120" height="120"alt=""/>
+                <h1>Super Trainning</h1>
+            <h3>Gethin(Wu Guoxiang)</h3>
+                <p>This is a process structure for the page.</p>
+                <img src="image/structure.jpg"width="600px">
+            </section>
+
+        </div><!-- // st-scroll -->
+        
+    </div><!-- // st-container -->
+    
+</div>
+</body>
